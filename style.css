@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+	margin: 0;
+	background-color: #eeededd3;
+}
+.top {
+	width: 100%;
+	height: 200px;
+	margin: 0px;
+	background-image: url('/img/△\ Backdrop@300x-100.jpg');
+	background-attachment: fixed;
+	background-position: 78% 78%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.logo {
+	width: 40%;
+	height: 130px;
+	background-image: url('/img/pecawhite@300x.png');
+	background-position: center;
+	background-size: 612px 216px;
+	background-repeat: no-repeat;
+}
+
+.main {
+	width: 100%;
+	height: 1150px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	background-image: url('/img/background@300x-100.jpg');
+	background-size: 100% 100%;
+}
+
+.left {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.topofleft {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.bottomofleft {
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.squares {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.square1 {
+	width: -100%;
+	height: 100%;
+	/* background-color: #429eee; */
+}
+
+#some {
+	background-image: url('/img/△\ PECA\ Logo\ B@300x.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	width: 300px;
+	height: 300px;
+}
+#some2 {
+	background-image: url('/img/Yellow\ Dots\ Logo\ B@300x.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	width: 300px;
+	height: 300px;
+}
+
+#some3 {
+	background-image: url('/img/Parachute\ Logo\ B@300x-100.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 300px 300px;
+	width: 300px;
+	height: 300px;
+}
+
+.que_es {
+	width: 90%;
+	height: 10%;
+}
+.titleque {
+	font-family: 'Overpass', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+.quetext {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.logistica {
+	width: 90%;
+	height: 30%;
+}
+
+.logtitle {
+	font-family: 'Overpass', sans-serif;
+}
+.logtext {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.right {
+	margin-top: 30px;
+	width: 50%;
+	height: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.aplicar {
+	width: 90%;
+	height: 35%;
+	background-color: #63b9d3;
+	padding: 15px;
+}
+.aplicartitle {
+	font-family: 'Overpass', sans-serif;
+}
+.aplicartext {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+.sponsors {
+	width: 90%;
+	height: 20%;
+}
+
+button,
+input[type='submit'],
+input[type='reset'] {
+	width: 100px;
+	height: 50px;
+	background-color: #1d5a6d;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Overpass', sans-serif;
+	border: none;
+	color: white;
+	transition: 0.4s;
+}
+
+button:hover {
+	background-color: #113541;
+}
