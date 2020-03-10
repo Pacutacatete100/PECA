@@ -4,7 +4,6 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
 		<title>PECA</title>
 	</head>
 	<body>
@@ -46,7 +45,6 @@
 						<div class="square1" id="some3"></div>
 						<div class="square1" id="some4"></div>
 					</div>
-					<div class="squares"></div>
 				</div>
 			</div>
 			<div class="right">
@@ -57,8 +55,25 @@
 					<div class="aplicartext">
 						<p>Estudiantes de 14 a 18 años interesados en el mundo del arte.</p>
 					</div>
-					<div class="signup">
-						<button class="open-button">¡Inscríbete!</button>
+					<button id="myBtn">Inscríbete</button>
+
+					<!-- The Modal -->
+					<div id="myModal" class="modal">
+						<!-- Modal content -->
+						<div class="modal-content">
+							<form class="signupform">
+								<label for="firstname">Primer Nombre</label>
+								<input type="text" id="firstname" name="firstname" /><br />
+								<label for="lastname">Apellido</label>
+								<input type="text" id="lastname" name="lastname" /><br />
+								<label for="email">Correo Electronico</label>
+								<input type="text" id="email" name="email" /><br />
+							</form>
+							<div class="formbuttons">
+								<span class="close">Cancelar</span>
+								<span class="close">Confirmar</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -66,5 +81,32 @@
 		<div class="signupform">
 			<div class="signupcontent"></div>
 		</div>
+		<script>
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById('myBtn');
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName('close')[0];
+
+			// When the user clicks the button, open the modal
+			btn.onclick = function() {
+				modal.style.display = 'block';
+			};
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+				modal.style.display = 'none';
+			};
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = 'none';
+				}
+			};
+		</script>
 	</body>
 </html>
