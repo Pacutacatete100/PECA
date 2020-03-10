@@ -156,8 +156,8 @@ body {
 }
 
 .aplicar {
-	width: 90%;
-	height: 95%;
+	width: 95%;
+	height: 100%;
 	background-color: #63b9d3;
 	padding: 15px;
 }
@@ -207,7 +207,7 @@ body {
 
 /* Modal Content */
 .modal-content {
-	height: 35%;
+	height: 40%;
 	width: 10%;
 	margin: auto;
 	background-image: url('/img/background@300x-100.jpg');
