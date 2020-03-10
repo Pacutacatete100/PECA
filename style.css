@@ -3,7 +3,8 @@
 
 body {
 	margin: 0;
-	background-color: #eeededd3;
+	background-image: url('/img/background@300x-100.jpg');
+	background-size: 100% 100%;
 }
 .top {
 	width: 100%;
@@ -30,13 +31,11 @@ body {
 
 .main {
 	width: 100%;
-	height: 1150px;
+	height: 500px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: flex-start;
-	background-image: url('/img/background@300x-100.jpg');
-	background-size: 100% 100%;
 }
 
 .left {
@@ -50,7 +49,7 @@ body {
 
 .topofleft {
 	width: 100%;
-	height: 50%;
+	height: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -69,6 +68,7 @@ body {
 .squares {
 	width: 100%;
 	height: 70%;
+	padding-bottom: 30px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -134,7 +134,7 @@ body {
 
 .logistica {
 	width: 90%;
-	height: 30%;
+	height: 10%;
 }
 
 .logtitle {
@@ -157,7 +157,7 @@ body {
 
 .aplicar {
 	width: 90%;
-	height: 60%;
+	height: 95%;
 	background-color: #63b9d3;
 	padding: 15px;
 }
@@ -211,7 +211,7 @@ body {
 	width: 10%;
 	margin: auto;
 	background-image: url('/img/background@300x-100.jpg');
-	background-position: 75% 75%;
+	background-position: 70% 70%;
 	padding: 20px;
 	border: 3px solid #888;
 	width: 20%;
