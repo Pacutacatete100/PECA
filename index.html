@@ -27,7 +27,7 @@
 					</div>
 					<div class="logistica">
 						<div class="logtitle">
-							<h1>¿QUÉ ES LA LOGÍSTICA?</h1>
+							<h1>¿CUAL ES LA LOGÍSTICA?</h1>
 						</div>
 						<div class="logtext">
 							<p>
@@ -55,19 +55,56 @@
 						<!-- Modal content -->
 						<div class="modal-content">
 							<form class="signupform">
-								<label for="firstname">Primer Nombre</label>
+								<label for="firstname">Nombre</label>
 								<input type="text" id="firstname" name="firstname" /><br />
 								<label for="lastname">Apellido</label>
 								<input type="text" id="lastname" name="lastname" /><br />
 								<label for="email">Correo Electronico</label>
 								<input type="text" id="email" name="email" /><br />
+								<label for="number">Numero de Telefono</label>
+								<input type="text" id="number" name="number" value="+52" /><br />
+							</form>
+							<form class="dateform">
+								<label for="dates">Escoge en que Fechas quisieras participar: </label>
+								<div class="choosedates">
+									<input
+										class="datecheckbox"
+										type="checkbox"
+										name="date1"
+										id="date1"
+										value="Museo Tamayo (abril 25)"
+									/>Museo Tamayo (abril 25)<br />
+									<input
+										class="datecheckbox"
+										type="checkbox"
+										name="date2"
+										id="date2"
+										value="Museo de Arte Moderno (mayo 2)"
+									/>Museo de Arte Moderno (mayo 2)<br />
+									<input
+										class="datecheckbox"
+										type="checkbox"
+										name="date3"
+										id="date3"
+										value="Museo Nacional de Arte (mayo 16)"
+									/>Museo Nacional de Arte (mayo 16)<br />
+									<input
+										class="datecheckbox"
+										type="checkbox"
+										name="date4"
+										id="date4"
+										value="Museo Jumex (mayo 30)"
+									/>Museo Jumex (mayo 30)<br />
+								</div>
 							</form>
 							<div class="formbuttons">
 								<span class="close">Cancelar</span>
-								<span class="close">Confirmar</span>
+								<span class="submit">Confirmar</span>
 							</div>
 						</div>
+						<!-- Modal content -->
 					</div>
+					<!-- Modal -->
 				</div>
 			</div>
 		</div>
@@ -83,5 +120,6 @@
 			<div class="signupcontent"></div>
 		</div>
 		<script src="index.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</body>
 </html>

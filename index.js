@@ -5,21 +5,59 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById('myBtn');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName('close')[0];
+var closebtn = document.getElementsByClassName('close')[0];
+
+var submitbtn = document.getElementsByClassName('submit')[0];
+
+var nameField = document.getElementById('firstname');
+var lastNameField = document.getElementById('lastname');
+var emailField = document.getElementById('email');
+var numberField = document.getElementById('number');
+var checkboxes = document.getElementsByClassName('datecheckbox');
 
 // When the user clicks the button, open the modal
-btn.onclick = function() {
+btn.onclick = _ => {
 	modal.style.display = 'block';
 };
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+closebtn.onclick = _ => {
 	modal.style.display = 'none';
+	resetFields();
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = event => {
 	if (event.target == modal) {
 		modal.style.display = 'none';
+		resetFields();
 	}
 };
+
+submitbtn.onclick = _ => {
+	var name = nameField.value;
+	var lastName = lastNameField.value;
+	var email = emailField.value;
+	var number = numberField.value;
+
+	var validateForm = function() {
+		var checks = $('input[type="checkbox"]:checked')
+			.map(function() {
+				return $(this).val();
+			})
+			.get();
+		//console.log(checks);
+		return checks;
+	};
+
+	console.log(name + ' ' + lastName + ': ' + email);
+	console.log(validateForm());
+};
+
+function resetFields() {
+	var name = (nameField.value = '');
+	var lastName = (lastNameField.value = '');
+	var email = (emailField.value = '');
+	var number = (numberField.value = '+52');
+	$('input[type="checkbox"]').prop('checked', false);
+}

@@ -78,7 +78,6 @@ body {
 .square1 {
 	width: -100%;
 	height: 100%;
-	/* background-color: #429eee; */
 }
 
 #some {
@@ -117,8 +116,13 @@ body {
 }
 
 .que_es {
+	padding-top: 30px;
 	width: 90%;
 	height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 .titleque {
 	font-family: 'Overpass', sans-serif;
@@ -133,12 +137,21 @@ body {
 }
 
 .logistica {
+	padding-top: 30px;
 	width: 90%;
 	height: 10%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 .logtitle {
 	font-family: 'Overpass', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 .logtext {
 	font-family: 'Montserrat', sans-serif;
@@ -175,7 +188,7 @@ body {
 }
 
 #myBtn {
-	width: 100px;
+	width: 120px;
 	height: 50px;
 	background-color: #1d5a6d;
 	display: flex;
@@ -183,6 +196,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	font-family: 'Overpass', sans-serif;
+	font-size: 22px;
 	border: none;
 	color: white;
 	transition: 0.4s;
@@ -207,8 +221,8 @@ body {
 
 /* Modal Content */
 .modal-content {
-	height: 40%;
-	width: 10%;
+	height: 65%;
+	width: 40%;
 	margin: auto;
 	background-image: url('/img/background@300x-100.jpg');
 	background-position: 70% 70%;
@@ -223,9 +237,19 @@ body {
 }
 
 .signupform {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.dateform {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 	align-items: flex-start;
 }
 
@@ -238,7 +262,8 @@ body {
 }
 
 /* The Close Button */
-.close {
+.close,
+.submit {
 	color: #5f5f5f;
 	float: right;
 	font-size: 25px;
@@ -249,7 +274,9 @@ body {
 }
 
 .close:hover,
-.close:focus {
+.close:focus,
+.submit:hover,
+.submit:focus {
 	border-color: #000;
 	color: #000;
 	text-decoration: none;
