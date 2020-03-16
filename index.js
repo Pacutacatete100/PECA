@@ -1,6 +1,11 @@
 // Get the modal
 var modal = document.getElementById('myModal');
 
+//TAMAYO
+var tamayoBox = document.getElementById('some');
+var tamayoModal = document.getElementById('tamayoModal');
+var tamayoclose = document.getElementById('tamayoclose');
+
 // Get the button that opens the modal
 var btn = document.getElementById('myBtn');
 
@@ -14,6 +19,13 @@ var lastNameField = document.getElementById('lastname');
 var emailField = document.getElementById('email');
 var numberField = document.getElementById('number');
 var checkboxes = document.getElementsByClassName('datecheckbox');
+
+tamayoBox.onclick = _ => {
+	tamayoModal.style.display = 'block';
+};
+tamayoclose.onclick = _ => {
+	tamayoModal.style.display = 'none';
+};
 
 // When the user clicks the button, open the modal
 btn.onclick = _ => {
