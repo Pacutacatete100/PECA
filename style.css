@@ -87,6 +87,7 @@ body {
 	background-size: 300px 300px;
 	width: 300px;
 	height: 300px;
+	transition: 0.5s;
 }
 #some2 {
 	background-image: url('/img/Yellow\ Dots\ Logo\ B@300x.png');
@@ -95,6 +96,7 @@ body {
 	background-size: 300px 300px;
 	width: 300px;
 	height: 300px;
+	transition: 0.5s;
 }
 
 #some3 {
@@ -104,6 +106,7 @@ body {
 	background-size: 300px 300px;
 	width: 300px;
 	height: 300px;
+	transition: 0.5s;
 }
 
 #some4 {
@@ -113,6 +116,14 @@ body {
 	background-size: 300px 300px;
 	width: 300px;
 	height: 300px;
+	transition: 0.5s;
+}
+
+#some:hover,
+#some2:hover,
+#some3:hover,
+#some4:hover {
+	background-size: 350px 350px;
 }
 
 .que_es {
@@ -262,6 +273,69 @@ body {
 	animation-duration: 0.4s;
 }
 
+.MAMcontent {
+	position: relative;
+	height: 65%;
+	width: 40%;
+	margin: auto;
+	background-image: url('/img/background@300x-100.jpg');
+	background-position: 70% 70%;
+	padding: 20px;
+	border: 8px solid #bcbcff;
+	width: 20%;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+.MNAcontent {
+	position: relative;
+	height: 65%;
+	width: 40%;
+	margin: auto;
+	background-image: url('/img/background@300x-100.jpg');
+	background-position: 70% 70%;
+	padding: 20px;
+	border: 8px solid #bcbcff;
+	width: 20%;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
+.Jumexcontent {
+	position: relative;
+	height: 65%;
+	width: 40%;
+	margin: auto;
+	background-image: url('/img/background@300x-100.jpg');
+	background-position: 70% 70%;
+	padding: 20px;
+	border: 8px solid #bcbcff;
+	width: 20%;
+	font-family: 'Montserrat', sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+}
+
 @-webkit-keyframes animatetop {
 	from {
 		top: -300px;
@@ -338,7 +412,13 @@ body {
 .submit:hover,
 .submit:focus,
 #tamayoclose:hover,
-#tamayoclose:focus {
+#tamayoclose:focus,
+#MAMclose:hover,
+#MAMclose:focus,
+#MNAclose:hover,
+#MNAclose:focus,
+#Jumexclose:hover,
+#Jumexclose:focus {
 	border-style: solid;
 	border-color: #000;
 	color: #000;
@@ -347,6 +427,48 @@ body {
 }
 
 #tamayoclose {
+	width: 120px;
+	height: 50px;
+	background-color: #f18181;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 22px;
+	border: none;
+	color: #000;
+}
+
+#MAMclose {
+	width: 120px;
+	height: 50px;
+	background-color: #f18181;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 22px;
+	border: none;
+	color: #000;
+}
+
+#MNAclose {
+	width: 120px;
+	height: 50px;
+	background-color: #f18181;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Overpass', sans-serif;
+	font-size: 22px;
+	border: none;
+	color: #000;
+}
+
+#Jumexclose {
 	width: 120px;
 	height: 50px;
 	background-color: #f18181;

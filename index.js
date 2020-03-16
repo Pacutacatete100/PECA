@@ -5,6 +5,45 @@ var modal = document.getElementById('myModal');
 var tamayoBox = document.getElementById('some');
 var tamayoModal = document.getElementById('tamayoModal');
 var tamayoclose = document.getElementById('tamayoclose');
+tamayoBox.onclick = _ => {
+	tamayoModal.style.display = 'block';
+};
+tamayoclose.onclick = _ => {
+	tamayoModal.style.display = 'none';
+};
+
+//MAM
+var MAMbox = document.getElementById('some2');
+var MAMmodal = document.getElementById('MAMmodal');
+var MAMclose = document.getElementById('MAMclose');
+MAMbox.onclick = _ => {
+	MAMmodal.style.display = 'block';
+};
+MAMclose.onclick = _ => {
+	MAMmodal.style.display = 'none';
+};
+
+//MNA
+var MNAbox = document.getElementById('some3');
+var MNAmodal = document.getElementById('MNAmodal');
+var MNAclose = document.getElementById('MNAclose');
+MNAbox.onclick = _ => {
+	MNAmodal.style.display = 'block';
+};
+MNAclose.onclick = _ => {
+	MNAmodal.style.display = 'none';
+};
+
+//JUMEX
+var Jumexbox = document.getElementById('some4');
+var Jumexmodal = document.getElementById('Jumexmodal');
+var Jumexclose = document.getElementById('Jumexclose');
+Jumexbox.onclick = _ => {
+	Jumexmodal.style.display = 'block';
+};
+Jumexclose.onclick = _ => {
+	Jumexmodal.style.display = 'none';
+};
 
 // Get the button that opens the modal
 var btn = document.getElementById('myBtn');
@@ -19,13 +58,6 @@ var lastNameField = document.getElementById('lastname');
 var emailField = document.getElementById('email');
 var numberField = document.getElementById('number');
 var checkboxes = document.getElementsByClassName('datecheckbox');
-
-tamayoBox.onclick = _ => {
-	tamayoModal.style.display = 'block';
-};
-tamayoclose.onclick = _ => {
-	tamayoModal.style.display = 'none';
-};
 
 // When the user clicks the button, open the modal
 btn.onclick = _ => {
@@ -43,6 +75,18 @@ window.onclick = event => {
 	if (event.target == modal) {
 		modal.style.display = 'none';
 		resetFields();
+	}
+	if (event.target == tamayoModal) {
+		tamayoModal.style.display = 'none';
+	}
+	if (event.target == MAMmodal) {
+		MAMmodal.style.display = 'none';
+	}
+	if (event.target == MNAmodal) {
+		MNAmodal.style.display = 'none';
+	}
+	if (event.target == Jumexmodal) {
+		Jumexmodal.style.display = 'none';
 	}
 };
 
