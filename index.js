@@ -96,18 +96,12 @@ submitbtn.onclick = _ => {
 	var email = emailField.value;
 	var number = numberField.value;
 
-	var validateForm = function() {
-		var checks = $('input[type="checkbox"]:checked')
-			.map(function() {
-				return $(this).val();
-			})
-			.get();
-		//console.log(checks);
-		return checks;
-	};
-
 	console.log(name + ' ' + lastName + ': ' + email);
-	console.log(validateForm());
+	var checkedDates = validateForm();
+
+	for (let i = 0; i < checkedDates.length; i++) {
+		console.log(checkedDates[i]);
+	}
 };
 
 function resetFields() {
@@ -116,4 +110,13 @@ function resetFields() {
 	var email = (emailField.value = '');
 	var number = (numberField.value = '+52');
 	$('input[type="checkbox"]').prop('checked', false);
+}
+
+function validateForm() {
+	var checks = $('input[type="checkbox"]:checked')
+		.map(function() {
+			return $(this).val();
+		})
+		.get();
+	return checks;
 }
