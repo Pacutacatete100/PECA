@@ -6,6 +6,16 @@ body {
 	background-image: url('/img/background@300x-100.jpg');
 	background-size: 100% 100%;
 }
+
+body::-webkit-scrollbar {
+	width: 12px;
+}
+body::-webkit-scrollbar-track {
+	background: #212d31;
+}
+body::-webkit-scrollbar-thumb {
+	background: #437d8f;
+}
 .top {
 	width: 100%;
 	height: 200px;
@@ -31,7 +41,7 @@ body {
 
 .main {
 	width: 100%;
-	height: 800px;
+	height: 780px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -57,13 +67,14 @@ body {
 }
 
 .bottom {
-	height: 1300px;
+	height: 1400px;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
+	margin-top: -85px;
 }
 .bottomtext {
 	display: flex;
@@ -71,14 +82,18 @@ body {
 	justify-content: flex-start;
 	align-items: center;
 	padding: 30px;
+	margin-top: -130px;
 }
+.costodeets {
+	font-size: 17px;
+}
+
 .equipo {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: baseline;
-	padding-left: 50px;
 }
 
 .bottomofleft {
@@ -90,10 +105,18 @@ body {
 	align-items: center;
 }
 
+.sponsors {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 60px;
+}
+
 .squares {
 	width: 100%;
 	height: 70%;
-	padding-bottom: 30px;
+	padding-bottom: 0px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -152,7 +175,7 @@ body {
 }
 
 .que_es {
-	padding-top: 30px;
+	padding-top: 100px;
 	width: 90%;
 	height: 10%;
 	display: flex;
@@ -173,7 +196,7 @@ body {
 }
 
 .logistica {
-	padding-top: 30px;
+	padding-top: 100px;
 	width: 90%;
 	height: 10%;
 	display: flex;
@@ -201,9 +224,10 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .contacto {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -211,8 +235,8 @@ body {
 }
 
 .aplicar {
-	width: 95%;
-	height: 53%;
+	width: 75%;
+	height: 50%;
 	background-color: #63b9d3;
 	padding: 15px;
 	font-family: 'Montserrat', sans-serif;
@@ -220,11 +244,11 @@ body {
 }
 .aplicartitle {
 	font-family: 'Overpass', sans-serif;
-	font-size: 17px;
+	font-size: 12px;
 }
 .aplicartext {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .sponsors {
@@ -233,7 +257,7 @@ body {
 }
 
 #myBtn {
-	width: 120px;
+	width: 180px;
 	height: 50px;
 	background-color: #1d5a6d;
 	display: flex;
